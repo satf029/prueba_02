@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Presentación</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        section {
+            width: 100%;
+            max-width: 1200px;
+            padding: 2rem 20px;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+        }
+
+        .about img {
+            border-radius: 50%;
+            margin-top: 1.5rem;
+            width: 150px;
+            height: 150px;
+        }
+
+        .services {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+
+        .services .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1.5rem 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                padding: 0 1rem;
+            }
+
+            .services .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a Mi Presentación</h1>
+    <p>Explora quién soy y lo que puedo ofrecerte</p>
+</header>
+
+<section class="about">
+    <h2>Acerca de Mí</h2>
+    <p>Soy una persona apasionada por la tecnología, el desarrollo web y las soluciones innovadoras. Mi objetivo es
+        crear experiencias únicas y de alto impacto, utilizando herramientas modernas para resolver problemas complejos
+        y optimizar procesos.</p>
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil">
+</section>
+
+<section class="services">
+    <h2>Servicios</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Desarrollo Web</h3>
+            <p>Construyo sitios web dinámicos, rápidos y responsivos, utilizando las últimas tecnologías web.</p>
+        </div>
+        <div class="card">
+            <h3>Consultoría Técnica</h3>
+            <p>Ofrezco asesoría en la implementación de proyectos tecnológicos para maximizar su impacto y eficiencia.</p>
+        </div>
+        <div class="card">
+            <h3>Soporte Técnico</h3>
+            <p>Brindo soporte técnico continuo para asegurar que todos tus sistemas funcionen sin problemas.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Mi Presentación. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
